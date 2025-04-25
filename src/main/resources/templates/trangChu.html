@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Chủ - Linh kiện máy tính</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-gray-50 font-sans">
+
+
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+
+            <!-- Logo -->
+            <div class="text-2xl font-bold text-blue-700 flex items-center gap-2">
+                <i data-lucide="cpu" class="w-6 h-6 text-blue-700"></i>
+                LinhKienPro
+            </div>
+            <div class="flex-1 mx-6">
+                <input type="text" placeholder="Tìm kiếm linh kiện..." class="w-full p-2 border rounded">
+            </div>
+            <div class="space-x-4">
+                <button class="text-gray-700 hover:text-blue-600">Giỏ hàng</button>
+                <button class="text-gray-700 hover:text-blue-600">Đăng nhập</button>
+            </div>
+        </div>
+    </nav>
+    <nav class="z-50 bg-white shadow-md">
+        <!-- Menu -->
+        <div
+            class="flex gap-6 text-sm md:text-base text-gray-700 font-medium items-center justify-between px-4 py-4 max-w-7xl mx-auto">
+
+            <!-- Main -->
+            <div class="relative group">
+                <button class="flex items-center gap-1 hover:text-blue-600">
+                    <i data-lucide="cpu" class="w-4 h-4"></i>Mainboard
+                </button>
+                <div
+                    class="absolute left-0 hidden group-hover:block bg-white shadow-lg mt-2 rounded p-2 space-y-2 z-50">
+                    <a href="#" class="block px-4 py-2 hover:bg-blue-100">ASROCK</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-blue-100">MSI</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-blue-100">B650</a>
+                </div>
+            </div>
+
+            <!-- CPU Dropdown -->
+            <div class="relative group">
+                <button class="flex items-center gap-1 hover:text-blue-600">
+                    <i data-lucide="cpu" class="w-4 h-4"></i>CPU
+                </button>
+                <div
+                    class="absolute left-0 hidden group-hover:block bg-white shadow-lg mt-2 rounded p-2 space-y-2 z-50">
+                    <a href="#" class="block px-4 py-2 hover:bg-blue-100">Intel</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-blue-100">AMD</a>
+                </div>
+            </div>
+
+            <!-- GPU Dropdown -->
+            <div class="relative group">
+                <button class="flex items-center gap-1 hover:text-blue-600">
+                    <i data-lucide="monitor" class="w-4 h-4"></i>GPU
+                </button>
+                <div
+                    class="absolute left-0 hidden group-hover:block bg-white shadow-lg mt-2 rounded p-2 space-y-2 z-50">
+                    <a href="#" class="block px-4 py-2 hover:bg-blue-100">NVIDIA</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-blue-100">AMD</a>
+                </div>
+            </div>
+
+            <!-- RAM Dropdown -->
+            <div class="relative group">
+                <button class="flex items-center gap-1 hover:text-blue-600">
+                    <i data-lucide="memory-stick" class="w-4 h-4"></i>RAM
+                </button>
+                <div
+                    class="absolute left-0 hidden group-hover:block bg-white shadow-lg mt-2 rounded p-2 space-y-2 z-50">
+                    <a href="#" class="block px-4 py-2 hover:bg-blue-100">Kingston</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-blue-100">Corsair</a>
+                </div>
+            </div>
+
+            <!-- Other Categories (No dropdown for now) -->
+            <a href="#" class="flex items-center gap-1 hover:text-blue-600">
+                <i data-lucide="hard-drive" class="w-4 h-4"></i>Ổ cứng
+            </a>
+            <a href="#" class="flex items-center gap-1 hover:text-blue-600">
+                <i data-lucide="thermometer" class="w-4 h-4"></i>Tản nhiệt
+            </a>
+            <a href="#" class="flex items-center gap-1 hover:text-blue-600">
+                <i data-lucide="plug" class="w-4 h-4"></i>PSU
+            </a>
+            <a href="#" class="flex items-center gap-1 hover:text-blue-600">
+                <i data-lucide="package" class="w-4 h-4"></i>Vỏ Case
+            </a>
+            <a href="#" class="flex items-center gap-1 hover:text-blue-600">
+                <i data-lucide="monitor-smartphone" class="w-4 h-4"></i>Màn hình
+            </a>
+
+        </div>
+        </div>
+    </nav>
+
+    <!-- Active lucide icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+
+
+    <!-- Banner -->
+    <section class="max-w-7xl mx-auto mt-4">
+        <img src="../static/images/2560x1021-VN-VGA.png" class="w-full rounded shadow" />
+    </section>
+
+    <!-- Sản phẩm bán chạy -->
+    <section class="max-w-7xl mx-auto mt-10 px-4">
+        <h2 class="text-2xl font-bold mb-6 text-blue-700">Sản phẩm bán chạy</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Sản phẩm -->
+            <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+                <img src="../static/images/25018-i5-12400f-trayi5-12400f-trayi5-12400f-tray.jpg" class="w-full mb-2" />
+                <h3 class="text-sm font-semibold">CPU Intel i5-12400F</h3>
+                <p class="text-red-600 font-bold">4.500.000đ</p>
+                <button class="mt-2 bg-blue-600 text-white px-3 py-1 rounded">Mua ngay</button>
+            </div>
+            <!-- Lặp lại thêm nhiều sản phẩm -->
+            <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+                <img src="../static/images/vga-gigabyte-geforce-rtx-3060-ti-eagle-oc-8g-gv-n306teagle-oc-8gd_.png"
+                    class="w-full mb-2" />
+                <h3 class="text-sm font-semibold">VGA GTX 3060ti</h3>
+                <p class="text-red-600 font-bold">5.500.000đ</p>
+                <button class="mt-2 bg-blue-600 text-white px-3 py-1 rounded">Mua ngay</button>
+            </div>
+            <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+                <img src="../static/images/60960_ram_desktop_corsair_vengeance_rs_rgb_.jpg" class="w-full mb-2" />
+                <h3 class="text-sm font-semibold">RAM CORSAIR VENGEANCE RGB RS 8GB DDR4</h3>
+                <p class="text-red-600 font-bold">660.000đ</p>
+                <button class="mt-2 bg-blue-600 text-white px-3 py-1 rounded">Mua ngay</button>
+            </div>
+    </section>
+    <!-- Danh mục nổi bật -->
+    <!-- Dùng Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <section class="max-w-7xl mx-auto mt-10 px-4">
+        <h2 class="text-2xl font-bold mb-6 text-blue-700">Danh mục nổi bật</h2>
+
+        <!-- DÒNG CPU -->
+        <div class="mb-8">
+            <h3 class="text-lg font-semibold mb-3">CPU</h3>
+            <div class="overflow-hidden">
+                <div class="flex gap-4 animate-scroll">
+                    <div class="min-w-[250px] bg-white shadow-md p-4 rounded-xl text-center">
+                        <img src="../static/images/cpu-intel-core-i9-11900f-up-to-5-2-ghz-8-nhan-16-luong-16mb-cache-lga-1200-2.jpg"
+                            class="mx-auto mb-2">
+                        <p class="font-semibold">Intel Core i9-11900F</p>
+                    </div>
+                    <div class="min-w-[250px] bg-white shadow-md p-4 rounded-xl text-center">
+                        <img src="../static/images/17131-cpu-amd-ryzen-9-5900xcpu-amd-ryzen-9-5900xcpu-amd-ryzen-9-5900xcpu-amd-ryzen-9-5900x.jpg"
+                            class="mx-auto mb-2">
+                        <p class="font-semibold">AMD Ryzen 9 5900X</p>
+                    </div>
+                    <div class="min-w-[250px] bg-white shadow-md p-4 rounded-xl text-center">
+                        <img src="../static/images/1941-12700t-km.png" class="mx-auto mb-2">
+                        <p class="font-semibold">Intel Core i7-12700F</p>
+                    </div>
+                    <div class="min-w-[250px] bg-white shadow-md p-4 rounded-xl text-center">
+                        <img src="../static/images/60386_cpu_amd_ryzen_7_5700g_65w_2.png" class="mx-auto mb-2">
+                        <p class="font-semibold">AMD Ryzen 7 5700G</p>
+                    </div>
+
+                    <div class="min-w-[250px] bg-white shadow-md p-4 rounded-xl text-center">
+                        <img src="../static/images/cpu-intel-core-i9-11900f-up-to-5-2-ghz-8-nhan-16-luong-16mb-cache-lga-1200-2.jpg"
+                            class="mx-auto mb-2">
+                        <p class="font-semibold">Intel Core i9-11900F</p>
+                    </div>
+                    <div class="min-w-[250px] bg-white shadow-md p-4 rounded-xl text-center">
+                        <img src="../static/images/17131-cpu-amd-ryzen-9-5900xcpu-amd-ryzen-9-5900xcpu-amd-ryzen-9-5900xcpu-amd-ryzen-9-5900x.jpg"
+                            class="mx-auto mb-2">
+                        <p class="font-semibold">AMD Ryzen 9 5900X</p>
+                    </div>
+                    <div class="min-w-[250px] bg-white shadow-md p-4 rounded-xl text-center">
+                        <img src="../static/images/1941-12700t-km.png" class="mx-auto mb-2">
+                        <p class="font-semibold">Intel Core i7-12700F</p>
+                    </div>
+                    <div class="min-w-[250px] bg-white shadow-md p-4 rounded-xl text-center">
+                        <img src="../static/images/60386_cpu_amd_ryzen_7_5700g_65w_2.png" class="mx-auto mb-2">
+                        <p class="font-semibold">AMD Ryzen 7 5700G</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <style>
+        @keyframes scrollLeft {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-scroll {
+            animation: scrollLeft 20s linear infinite;
+        }
+    </style>
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-16 py-6">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between">
+            <div>
+                <h3 class="font-bold text-lg">LinhKienPro</h3>
+                <p>© 2025 - All rights reserved</p>
+            </div>
+            <div>
+                <h4 class="font-semibold">Liên hệ</h4>
+                <p>Địa chỉ: 123 Đường Trần Hưng Đạo, Hà Nội</p>
+                <p>Email: support@linhkienpro.vn</p>
+            </div>
+            <div>
+                <h4 class="font-semibold">Chính sách</h4>
+                <ul>
+                    <li><a href="#" class="hover:underline">Bảo hành</a></li>
+                    <li><a href="#" class="hover:underline">Đổi trả</a></li>
+                    <li><a href="#" class="hover:underline">Giao hàng</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
